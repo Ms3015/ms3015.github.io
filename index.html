@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
   <style>
+    :focus-visible{outline:3px solid #19c7d4;outline-offset:5px} .project-notes{max-width:760px;margin-top:32px;line-height:1.75} .project-notes a{color:#0759b5} .hero-copy-block{min-width:0} .contact-links a{overflow-wrap:anywhere} @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
     .hero{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(290px,.65fr);gap:42px;align-items:center}
     .hero-visual{width:100%;max-width:430px;justify-self:end}
     @media(max-width:760px){.hero{display:block}.hero-visual{margin:42px auto 0;display:block}}
@@ -18,7 +19,7 @@
 <body>
   <header class="site-header">
     <a class="brand" href="#top" aria-label="Mahmoud Salah home">MS<span>.</span></a>
-    <nav aria-label="Main navigation"><a href="#work">Work</a><a href="#expertise">Expertise</a><a href="#contact">Contact</a></nav>
+    <nav aria-label="Main navigation"><a href="#work">Work</a><a href="#expertise">Expertise</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
   </header>
 
   <main id="top">
@@ -37,11 +38,14 @@
       <div class="section-heading"><p class="eyebrow">Selected work</p><h2>Technical work that shows the method.</h2></div>
       <article class="project-card featured-project">
         <div class="project-mark"><span>01</span><span>EDUCATION PLATFORM</span></div>
-        <div class="project-body"><h3>Smartphone Hardware Diagnostics</h3><p>A bilingual, visual knowledge application for understanding smartphone hardware, component relationships, and evidence-based diagnostic reasoning.</p><ul><li>Hardware-domain lessons and linked glossary</li><li>English and Arabic interface with RTL support</li><li>Searchable technical content and original conceptual diagrams</li></ul><div class="project-links"><a href="https://smartphone-hardware-diagnostics.m7moud-salah2015.chatgpt.site" target="_blank" rel="noreferrer">Open live application ↗</a><a href="https://github.com/Ms3015/smartphone-hardware-diagnostics" target="_blank" rel="noreferrer">View source ↗</a></div></div>
+        <div class="project-body"><h3>Smartphone Hardware Diagnostics</h3><p>A bilingual, visual knowledge application for understanding smartphone hardware, component relationships, and evidence-based diagnostic reasoning.</p><ul><li>Hardware-domain lessons and linked glossary</li><li>English and Arabic interface with RTL support</li><li>Searchable technical content and original conceptual diagrams</li></ul><div class="project-links"><a href="https://smartphone-hardware-diagnostics.m7moud-salah2015.chatgpt.site" target="_blank" rel="noreferrer">Open live application ↗</a></div></div>
       </article>
-      <div class="case-grid">
-        <article class="case-card"><p class="case-number">02</p><h3>Fault-analysis case studies</h3><p>Documented investigations will show symptoms, measurements, isolation steps, corrective action, and final verification.</p><span>Coming soon</span></article>
-        <article class="case-card"><p class="case-number">03</p><h3>Repair process improvement</h3><p>Workflow design, technical mentoring, and the approach that reduced average repair time by 20% while maintaining quality.</p><span>Coming soon</span></article>
+      <div class="project-notes">
+        <h3>Why I’m building this</h3>
+        <p>Smartphone diagnostics draws on power, timing, storage, and signal relationships. This project organizes those subjects into a bilingual reference for learning how to reason about hardware.</p>
+        <h3>Current release</h3>
+        <p>Fifteen lessons across Core Concepts, Power Management, and Clocks &amp; Timing, with search and a linked glossary. The remaining domains are planned. Content is educational draft material awaiting technical review; the application does not diagnose devices automatically.</p>
+        <p><a href="templates/repair-investigation.md">Download the repair investigation template</a> · <a href="templates/process-improvement.md">Download the process measurement template</a></p>
       </div>
     </section>
 
@@ -52,6 +56,12 @@
 
     <section class="section approach"><p class="eyebrow">How I work</p><ol><li><strong>Observe</strong><span>Define the symptom and reproduce the failure.</span></li><li><strong>Measure</strong><span>Check power, resistance, current, and relevant signals.</span></li><li><strong>Isolate</strong><span>Use schematics and board evidence to narrow the fault.</span></li><li><strong>Verify</strong><span>Confirm function and stability after the corrective action.</span></li></ol></section>
 
+    <section id="about" class="section">
+      <p class="eyebrow">About Mahmoud</p>
+      <h2>A career built around hands-on troubleshooting.</h2>
+      <p class="hero-copy">My experience spans repair-shop work and smartphone motherboard diagnostics at vivo in Egypt and Türkiye. Alongside component-level repair, I have trained technicians and helped improve repair workflows.</p>
+      <p class="hero-copy">My focus is the reasoning behind the repair: understanding the symptom, choosing useful measurements, tracing the fault, and checking the result. I’m based in Gebze, Kocaeli, Türkiye.</p>
+    </section>
     <section id="contact" class="contact"><p class="eyebrow">Get in touch</p><h2>Let’s talk about hardware.</h2><p>Available for Electronics Failure Analysis, Hardware Reliability, Quality, and Repair Process Engineering opportunities.</p><div class="contact-links"><a href="mailto:mahmoudsalah3015@gmail.com">mahmoudsalah3015@gmail.com</a><a href="https://linkedin.com/in/mosala7" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="https://github.com/Ms3015" target="_blank" rel="noreferrer">GitHub ↗</a></div></section>
   </main>
   <footer><span>© 2026 Mahmoud Salah</span><span>Electronics Failure Analysis & PCB Diagnostics</span></footer>
