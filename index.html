@@ -9,6 +9,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    .hero{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(290px,.65fr);gap:42px;align-items:center}
+    .hero-visual{width:100%;max-width:430px;justify-self:end}
+    @media(max-width:760px){.hero{display:block}.hero-visual{margin:42px auto 0;display:block}}
+  </style>
 </head>
 <body>
   <header class="site-header">
@@ -18,11 +23,14 @@
 
   <main id="top">
     <section class="hero">
-      <p class="eyebrow">Electronics Failure Analysis Engineer</p>
-      <h1>Evidence first.<br><em>Faults resolved.</em></h1>
-      <p class="hero-copy">I diagnose smartphone motherboard failures, trace power and signal faults, and improve the repair process from first measurement to verified result.</p>
-      <div class="actions"><a class="button primary" href="#work">Explore engineering work</a><a class="button secondary" href="#contact">Discuss a repair</a></div>
-      <div class="hero-meta"><span>Gebze, Kocaeli, Türkiye</span><span>6+ years of hands-on diagnostics</span></div>
+      <div class="hero-copy-block">
+        <p class="eyebrow">Electronics Failure Analysis Engineer</p>
+        <h1>Evidence first.<br><em>Faults resolved.</em></h1>
+        <p class="hero-copy">I diagnose smartphone motherboard failures, trace power and signal faults, and improve the repair process from first measurement to verified result.</p>
+        <div class="actions"><a class="button primary" href="#work">Explore engineering work</a><a class="button secondary" href="#contact">Discuss a repair</a></div>
+        <div class="hero-meta"><span>Gebze, Kocaeli, Türkiye</span><span>6+ years of hands-on diagnostics</span></div>
+      </div>
+      <img class="hero-visual" src="assets/diagnostic-flow.svg" alt="A conceptual smartphone motherboard diagnostic map showing power, processor, memory, RF, measurement, and verification paths." />
     </section>
 
     <section id="work" class="section featured">
