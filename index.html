@@ -14,7 +14,7 @@
     .hero{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(290px,.65fr);gap:42px;align-items:center}
     .hero-visual{width:100%;max-width:430px;justify-self:end}
     @media(max-width:760px){.hero{display:block}.hero-visual{margin:42px auto 0;display:block}}
-  </style>
+  .screenshots{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:30px}.screenshots figure{margin:0}.screenshots img{width:100%;height:auto;display:block;border-radius:8px}figcaption{font-size:13px;color:#5e6b79;margin-top:10px}.hero h1{font-size:clamp(42px,5.4vw,72px)}@media(max-width:760px){.screenshots{grid-template-columns:1fr}.site-header{gap:12px}nav{gap:12px;flex-wrap:wrap}nav a{font-size:13px}.hero-visual{margin-top:30px!important}} </style>
 </head>
 <body>
   <header class="site-header">
@@ -26,12 +26,12 @@
     <section class="hero">
       <div class="hero-copy-block">
         <p class="eyebrow">Electronics Failure Analysis Engineer</p>
-        <h1>Evidence first.<br><em>Faults resolved.</em></h1>
+        <h1>Mahmoud Salah.<br><em>PCB diagnostics.</em></h1>
         <p class="hero-copy">I diagnose smartphone motherboard failures, trace power and signal faults, and improve the repair process from first measurement to verified result.</p>
-        <div class="actions"><a class="button primary" href="#work">Explore engineering work</a><a class="button secondary" href="#contact">Discuss a repair</a></div>
+        <div class="actions"><a class="button primary" href="#work">Explore engineering work</a><a class="button secondary" href="#contact">Discuss a repair</a><a class="button secondary" href="assets/Mahmoud_Salah_Resume.pdf" download>Download CV (PDF)</a></div>
         <div class="hero-meta"><span>Gebze, Kocaeli, Türkiye</span><span>6+ years of hands-on diagnostics</span></div>
       </div>
-      <img class="hero-visual" src="assets/diagnostic-flow.svg" alt="A conceptual smartphone motherboard diagnostic map showing power, processor, memory, RF, measurement, and verification paths." />
+      <figure class="hero-visual" style="margin:0"><a href="#work"><img style="width:100%;border-radius:12px" src="assets/app-power.jpg" width="1348" height="926" alt="Actual screenshot of the application’s conceptual power-learning view" /></a><figcaption>My project · Smartphone Hardware Diagnostics</figcaption></figure>
     </section>
 
     <section id="work" class="section featured">
@@ -40,6 +40,10 @@
         <div class="project-mark"><span>01</span><span>EDUCATION PLATFORM</span></div>
         <div class="project-body"><h3>Smartphone Hardware Diagnostics</h3><p>A bilingual, visual knowledge application for understanding smartphone hardware, component relationships, and evidence-based diagnostic reasoning.</p><ul><li>Hardware-domain lessons and linked glossary</li><li>English and Arabic interface with RTL support</li><li>Searchable technical content and original conceptual diagrams</li></ul><div class="project-links"><a href="https://smartphone-hardware-diagnostics.m7moud-salah2015.chatgpt.site" target="_blank" rel="noreferrer">Open live application ↗</a></div></div>
       </article>
+      <div class="screenshots">
+        <figure><a href="assets/app-overview.jpg"><img src="assets/app-overview.jpg" width="1348" height="926" loading="lazy" alt="Hardware Field Guide overview showing learning paths and hardware domains" /></a><figcaption>Application overview · learning paths and hardware domains</figcaption></figure>
+        <figure><a href="assets/app-power.jpg"><img src="assets/app-power.jpg" width="1348" height="926" loading="lazy" alt="Interactive conceptual power reference with the PMIC selected" /></a><figcaption>Power reference · interactive educational model</figcaption></figure>
+      </div>
       <div class="project-notes">
         <h3>Why I’m building this</h3>
         <p>Smartphone diagnostics draws on power, timing, storage, and signal relationships. This project organizes those subjects into a bilingual reference for learning how to reason about hardware.</p>
