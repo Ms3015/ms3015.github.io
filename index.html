@@ -14,12 +14,14 @@
     .hero{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(290px,.65fr);gap:42px;align-items:center}
     .hero-visual{width:100%;max-width:430px;justify-self:end}
     @media(max-width:760px){.hero{display:block}.hero-visual{margin:42px auto 0;display:block}}
-  .screenshots{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:30px}.screenshots figure{margin:0}.screenshots img{width:100%;height:auto;display:block;border-radius:8px}figcaption{font-size:13px;color:#5e6b79;margin-top:10px}.hero h1{font-size:clamp(42px,5.4vw,72px)}@media(max-width:760px){.screenshots{grid-template-columns:1fr}.site-header{gap:12px}nav{gap:12px;flex-wrap:wrap}nav a{font-size:13px}.hero-visual{margin-top:30px!important}} </style>
+  .screenshots{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:30px}.screenshots figure{margin:0}.screenshots img{width:100%;height:auto;display:block;border-radius:8px}figcaption{font-size:13px;color:#5e6b79;margin-top:10px}.hero h1{font-size:clamp(42px,5.4vw,72px)}
+  .experience-layout{display:grid;grid-template-columns:minmax(260px,.8fr) minmax(0,1.2fr);gap:58px;align-items:start}.experience-photo{margin:0}.experience-photo img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:32% center;display:block;border-radius:8px}.experience-list{border-top:1px solid var(--line)}.experience-item{padding:26px 0;border-bottom:1px solid var(--line)}.experience-date{font:500 12px 'DM Mono',monospace;color:var(--blue);margin:0 0 9px}.experience-item h3{font-size:23px;letter-spacing:-.035em;margin:0}.experience-company{color:var(--muted);margin:6px 0 14px;font-size:15px}.experience-item ul{margin:0;padding-left:19px;color:var(--muted);font-size:14px}.experience-item li+li{margin-top:6px}
+  @media(max-width:760px){.screenshots{grid-template-columns:1fr}.experience-layout{grid-template-columns:1fr;gap:30px}.experience-photo img{aspect-ratio:16/10;object-position:32% center}.site-header{gap:12px}nav{gap:12px;flex-wrap:wrap}nav a{font-size:13px}.hero-visual{margin-top:30px!important}} </style>
 </head>
 <body>
   <header class="site-header">
     <a class="brand" href="#top" aria-label="Mahmoud Salah home">MS<span>.</span></a>
-    <nav aria-label="Main navigation"><a href="#work">Work</a><a href="#expertise">Expertise</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+    <nav aria-label="Main navigation"><a href="#experience">Experience</a><a href="#work">Work</a><a href="#expertise">Expertise</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
   </header>
 
   <main id="top">
@@ -32,6 +34,18 @@
         <div class="hero-meta"><span>Gebze, Kocaeli, Türkiye</span><span>6+ years of hands-on diagnostics</span></div>
       </div>
       <figure class="hero-visual" style="margin:0"><a href="#work"><img style="width:100%;height:auto;display:block;border-radius:12px" src="assets/app-power.jpg" width="1348" height="926" alt="Actual screenshot of the application’s conceptual power-learning view" /></a><figcaption>My project · Smartphone Hardware Diagnostics</figcaption></figure>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="section-heading"><p class="eyebrow">Professional experience</p><h2>Hands-on diagnostics across repair and production.</h2></div>
+      <div class="experience-layout">
+        <figure class="experience-photo"><img src="assets/mahmoud-vtech.jpg" width="1280" height="720" loading="lazy" alt="Mahmoud Salah at the V TECH facility in Türkiye" /><figcaption>Mahmoud at V TECH, Türkiye.</figcaption></figure>
+        <div class="experience-list">
+          <article class="experience-item"><p class="experience-date">JUN 2024 — PRESENT</p><h3>Senior Smartphone PCB &amp; Motherboard Repair Engineer</h3><p class="experience-company">vivo Türkiye · Gebze, Kocaeli, Türkiye</p><ul><li>Diagnose smartphone motherboard faults through board-level analysis, measurements, and schematic-guided tracing.</li><li>Carry out precision component repair and functional verification.</li><li>Support technician development through practical diagnostic and repair guidance.</li></ul></article>
+          <article class="experience-item"><p class="experience-date">APR 2022 — JUN 2024</p><h3>Team Lead, Smartphone PCB &amp; Motherboard Repair</h3><p class="experience-company">vivo Egypt · Egypt</p><ul><li>Led hands-on motherboard diagnosis and component-level repair work.</li><li>Helped technicians apply consistent troubleshooting and repair practices.</li><li>Transferred internally to vivo Türkiye in June 2024.</li></ul></article>
+          <article class="experience-item"><p class="experience-date">2019 — 2021</p><h3>Mobile &amp; Electronics Repair Technician</h3><p class="experience-company">Independent repair shop · Egypt</p><ul><li>Repaired smartphones, laptops, and game consoles at component level.</li><li>Built practical experience in fault isolation, microsoldering, and repair verification.</li></ul></article>
+        </div>
+      </div>
     </section>
 
     <section id="work" class="section featured">
